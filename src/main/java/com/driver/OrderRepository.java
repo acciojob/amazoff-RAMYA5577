@@ -14,6 +14,8 @@ public class OrderRepository {
     private  Map<String,DeliveryPartner> deliveryPartnerMap;  //partnerId,partner
     private Map<String,String> orderPartnerPairMap;     //orderId,partnerId
 
+    private Map<String,Order> partnerOrderMap;     //partnerId,his order
+
 
     public OrderRepository() {
         this.orderMap=new HashMap<String,Order>();
@@ -65,7 +67,7 @@ public class OrderRepository {
     public int getCountOfUnassignedOrders(){
         int count=0;
 
-        return 1;
+        return count;
     }
 
     public int getOrdersLeftAfterGivenTimeByPartnerId(){
