@@ -50,11 +50,11 @@ public class OrderService {
         return orderRepository.getCountOfUnassignedOrders();
     }
 
-    public int getOrdersLeftAfterGivenTimeByPartnerId(String time,String partnerId){  //10
+    public int getOrdersLeftAfterGivenTimeByPartnerId(int time,String partnerId){  //10
         return orderRepository.getOrdersLeftAfterGivenTimeByPartnerId(time,partnerId);
     }
 
-    public String getLastDeliveryTimeByPartnerId(String partnerId){  //11
+    public int getLastDeliveryTimeByPartnerId(String partnerId){  //11
         return orderRepository.getLastDeliveryTimeByPartnerId(partnerId);
     }
 

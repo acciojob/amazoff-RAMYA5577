@@ -94,7 +94,7 @@ public class OrderController {
     }
 
     @GetMapping("/get-count-of-orders-left-after-given-time/{partnerId}")  //10
-    public ResponseEntity<Integer> getOrdersLeftAfterGivenTimeByPartnerId(@PathVariable String time, @PathVariable String partnerId){
+    public ResponseEntity<Integer> getOrdersLeftAfterGivenTimeByPartnerId(@PathVariable int time, @PathVariable String partnerId){
 
         Integer countOfOrders = 0;
 
